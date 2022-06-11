@@ -11,8 +11,8 @@ const app = express();
     app.use(bodyParser.urlencoded({extended: true}));
     //Router
 
-    require('./controllers/authController')(app)
-    require('../src/controllers/projectController')(app)
+    require('../src/app/controllers/authController')(app)
+    require('../src/app/controllers/projectController')(app)
 
     
 app.listen(8000, () =>(
